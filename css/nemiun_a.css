@@ -1,0 +1,428 @@
+@font-face{
+    font-family: charter;
+    src: url('../fonts/charter-regular.otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: charter;
+    src: url('../fonts/charter-italic.otf');
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: charter;
+    src: url('../fonts/charter-bold.otf');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: charter;
+    src: url('../fonts/charter-bold-italic.otf');
+    font-style: italic;
+    font-weight: bold;
+}
+:root{
+    font-size: 18px;
+    --white30: white;
+    --white20: #a5a3a5 ;
+    --white10: #3a3539;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+p{
+    color: var(--white20);
+}
+
+body{
+    /* font-family: charter; */
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+    margin:0;
+}
+
+a{
+    color: var(--white30);
+}
+.header{
+
+}
+.header-content{
+    /* position: relative;
+    inset-block-start: 65px; */
+    padding-inline: 20px;
+}
+header{
+    margin-block-start: 20px;
+    font-size: 14px;
+    color: var(--white30);
+    /* position: absolute;
+    /* top */
+    /* inset-block-start: 0px; */
+    /* bottom */
+    /* inset-block-end: ; */
+    /* left  */
+    /* inset-inline-start: -208px; */
+    /* right  */
+    /* inset-inline-end: ; */
+    /* inline-size: 188px; */
+     
+
+ }
+
+ header li{
+     color: #616161;
+     margin-block-end: 16px;
+ }
+ header ul {
+    padding-inline: 8px;
+    
+
+    
+}
+ header ul li{
+    color: #616161;
+    margin-block-end: 24px;
+    list-style: none;
+
+    
+    
+    
+}
+
+
+.active{
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 8px;
+    
+    
+}
+header ul li a{
+    padding-inline-start: 8px;
+    padding-inline-end: 80px;
+    padding-block: 8px;
+}
+
+header ul li a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+   
+    
+}
+
+
+  header a {
+        /* color:var(--white20); */
+      text-decoration: none;
+      color: #616161;
+  }
+
+  header a:hover{
+    color:#424242;
+    }
+    summary::-webkit-details-marker {
+        display: none;
+    }
+nav details summary{
+    font-weight: bold;
+    color: #616161;
+    font-size: 14px;
+    
+}
+
+ol li:nth-child() {
+    /* border: 1px solid red; */
+}
+
+h1{
+   
+    font-size: 40px;
+    font-weight: normal;
+    color: #212121;
+    margin-block-start: 20px;
+    margin-block-end: 16px;
+    /* font-size: 3.5em; */
+}
+
+h2{
+    font-size: 2em;
+    font-weight: normal;
+    margin-block: 40px;
+    color: #212121;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-block: 16px;
+    color: #212121;
+    border-block-end: 4px solid #212121;
+    width: fit-content;
+}
+
+pre{
+    background-color:#FEC62E;
+    padding: 40px;
+    overflow: auto;
+    margin-block-end: 30px;
+}
+
+hr {
+    margin-block: 40px;
+    border-color: rgba(97,97,97,0.2);
+}
+
+
+.hero{
+    background-image: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
+    block-size: 50px;
+}
+
+.hero-a{
+    background-image: linear-gradient(to top,rgba(255,255,255,.33),transparent),url('../images/patron-1.png');
+    block-size: 350px;
+}
+.content{
+    counter-reset: titleList;
+     
+}
+.content img{
+    margin-block-start: 40px;
+    display: block;
+    max-inline-size: 100%;
+}
+.content h3{
+    counter-increment: titleList;
+}
+.content h3::before{
+    content: counter(titleList,decimal)'. ';
+}
+
+.content h3::after{
+
+}
+
+
+.main{
+ /* border: 1px solid red; */
+
+}
+
+.main-content p{
+    color: #212121;
+}
+
+.content p{
+    color: #424242;
+}
+.wrapper{
+    /* border: 1px solid yellow; */
+    max-inline-size: 902px;
+    margin: auto;
+    max-width: 902px;
+    /* block-size: 100px; */
+    /* overflow: hidden; */
+}
+
+.main-content{
+    /* border: 1px solid blue; */
+    padding-inline: 16px;
+}
+
+
+blockquote{
+
+    border-inline-start: 4px solid #212121;
+    width: fit-content; 
+    margin-block-start: 80px;
+    margin-block-end: 63px;
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+
+    font-size: 24px;
+    line-height: 32px;
+    
+}
+
+a{
+
+    color: #212121;
+}
+.nonborder{
+    border: 0;
+}
+
+blockquote p{
+    color: var(--white30);
+}
+blockquote span{
+    color: #616161;
+}
+.main hr{
+    display: none;
+}
+
+.slider{
+    
+}
+.slider-container{
+    /* block-size: 100px; */
+    display: block;
+    overflow: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    font-size: 0;
+    overflow-x: hidden;
+}
+.video{
+    margin: 0;
+    
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.slider-bullet-list{
+    text-align: center;
+    margin-block-start: 10px;
+    
+}
+.slider-bullet{
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.form{
+    position: relative;
+}
+.form input{
+    border: 1px solid #616161;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 90px;
+    padding-inline: 16px;
+    padding-block: 12px;
+    font-size: 16px;
+    margin-block-end: 24px;
+    inline-size: 280px;
+
+}
+.form input[type="text"]{
+    margin-inline-end: 16px;
+}
+.form input[type="submit"]{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+
+}
+.form input::-webkit-input-placeholder{
+    color: #424242;
+    
+
+}
+
+footer{
+    background-color: #212429;
+    padding-block: 48px;
+    height: 135px;
+    margin-block-start: 48px;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.copytext{
+    height: 10px;
+}
+
+.copyright p{
+    color: white;
+    font-size: 32px ;
+}
+
+.copyright p{
+    color: white;
+    font-size: 32px;
+}
+
+.copyright a{
+    margin-inline-end: 16px;
+    
+}
+
+.copyright a:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+@media screen and (min-width: 1366px){
+
+    .hero{
+        block-size: 350px;
+    }
+    .header{
+        position: sticky;
+        inset-block-start: -45px;
+    }
+    .header-content{
+        position: relative;
+        inset-block-start: 65px;
+        padding-inline: 0px;
+    }
+    header{
+        font-size: 14px;
+        position: absolute;
+        inset-block-start: 0px;
+        inset-inline-start: -208px;
+        inline-size: 214px;
+        
+     }
+    h1{
+        font-size: 60px;
+    margin-block-start: 64px;
+    }
+    .form input[type="submit"]{
+        
+       
+        background-color: black;
+    border: 1px solid black;
+    position: absolute;
+    color: white;
+    inline-size: 119px; 
+   left: 465px;
+   cursor: pointer;
+    
+    }
+    
+}
+
+/* ::selection{
+    background: red;
+} */
+
+
+/* h2{
+    font-size: 24px;
+    /* font-size: 1.5em; */
+
+
+
+
+/* body> .title --> le da al primer hijo los demas no. */
+/* h1 ~ h2 --> los h2 que sean hermanos de h1 o esten cerca. */
+/* h1 + h2 -----> Adyacente solo al elemento mas cerca solo uno . */
